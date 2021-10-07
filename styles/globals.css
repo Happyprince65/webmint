@@ -12,15 +12,20 @@ a {
   color: inherit;
   text-decoration: none;
 }
+img{width: 100%;}
+.wd{width: 50%}
 label{
   margin-top: 20px;
   font-weight: bold;
+  font-size: 1vw ;
 }
 .mm{
   margin-bottom: 20px;
+  font-size: 1vw 
 }
 .mml{
   margin-right: 20px;
+  font-size: 1vw 
 
 }
 * {
