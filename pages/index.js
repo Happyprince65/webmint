@@ -102,7 +102,7 @@ export default function Home() {
 
         const estemated_Gas = await contract.methods.mint("Bookblocks & Women for Afghan Women October 2021", title).estimateGas({
           from : address, 
-          value: web3.utils.toWei(buy_price,"ether"),
+          value: web3.utils.toWei(pricetopay,"ether"),
           maxPriorityFeePerGas: null,
           maxFeePerGas: null
         });
@@ -127,14 +127,15 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
+      <main className={styles.main + " wd"}>
+      <div className="container">
         <img src="logo.png" />
-        <div className="container">
+       
           <label>How many NFTs do you want to mint? Enter 1 (min) to 20 (max)</label>
-<input className="form-control form-control-lg mm" type='number' defaultValue="1" onChange={event => setTitle(event.target.value)} />
+<input className="form-control form-control-lg mm wd" type='number' defaultValue="1" onChange={event => setTitle(event.target.value)} />
 
-      <button className="btn btn-primary btn-lg form-control-lg mml" onClick={connect_wallet}>{walletstatus}</button>
-      <button className="btn btn-primary btn-lg active form-control-lg" onClick={mint_nft}>Mint NFT</button>
+      <button className="btn btn-primary mml" onClick={connect_wallet}>{walletstatus}</button>
+      <button className="btn btn-primary" onClick={mint_nft}>Mint NFT</button>
 </div>
         
       </main>
