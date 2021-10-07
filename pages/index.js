@@ -102,7 +102,7 @@ export default function Home() {
 
         const estemated_Gas = await contract.methods.mint("Bookblocks & Women for Afghan Women October 2021", title).estimateGas({
           from : address, 
-          value: web3.utils.toWei(pricetopay,"ether"),
+          value: web3.utils.toWei(pricetopay.toString(),"ether"),
           maxPriorityFeePerGas: null,
           maxFeePerGas: null
         });
