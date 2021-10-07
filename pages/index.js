@@ -134,8 +134,8 @@ export default function Home() {
           <label>How many NFTs do you want to mint? Enter 1 (min) to 20 (max)</label>
 <input className="form-control form-control-lg mm wd" type='number' defaultValue="1" onChange={event => setTitle(event.target.value)} />
 
-      <button className="btn btn-primary mml" onClick={connect_wallet}>{walletstatus}</button>
-      <button className="btn btn-primary" onClick={mint_nft}>Mint NFT</button>
+      <button className="btn btn-primary mml ff" onClick={connect_wallet}>{walletstatus}</button>
+      <button className="btn btn-primary ff" onClick={mint_nft}>Mint NFT</button>
 </div>
         
       </main>
